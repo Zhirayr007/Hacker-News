@@ -1,0 +1,165 @@
+.button {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: "Open Sans";
+}
+
+.button button {
+	font-size: 1.5em;
+	background: #3498db;
+	color: #fff;
+	border: 0.25rem solid #3498db;
+	padding: 0.85em 0.75em;
+	margin: 1rem;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.button button a {
+	color: #fff;
+}
+
+.button button:hover a {
+	color: #3498db;
+}
+
+.button button:hover {
+	color: #3498db;
+}
+
+.button button::after {
+	content: "";
+	background: #ecf0f1;
+	position: absolute;
+	z-index: -1;
+	padding: 0.85em 0.75em;
+	display: block;
+}
+
+.back::after {
+	transition: all 0.3s ease;
+}
+
+.back:hover::after {
+	transition: all 0.3s ease-out;
+}
+
+.back::after {
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	transform: scale(0, 0);
+}
+
+.back:hover::after {
+	transform: scale(1, 1);
+}
+
+.restart-comment::after {
+	transition: all 0.3s ease;
+}
+
+.restart-comment:hover::after {
+	transition: all 0.3s ease-out;
+}
+
+.restart-comment::after {
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	transform: scale(0, 0);
+}
+
+.restart-comment:hover::after {
+	transform: scale(1, 1);
+}
+
+/*----------------------------------------*/
+.news-page {
+	margin-top: 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+}
+
+.news-page__title {
+	font-size: 36px;
+	text-align: center;
+}
+
+.news-page__link {
+	margin-top: 20px;
+}
+
+.news-page__author {
+	margin-top: 20px;
+}
+
+.news-page__date {
+	margin-top: 20px;
+}
+
+.news-page__time {
+	margin-top: 5px;
+}
+
+.news-page__comment-number {
+	margin-top: 5px;
+}
+
+.news-page__comment {
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+	margin-top: 25px;
+}
+
+
+/*--------------------------------------------------------*/
+/*comment*/
+/* .comment {
+	width: 100%;
+	height: 100%;
+	border: 2px solid black;
+	border-radius: 15px;
+	background-color: rgb(133, 21, 118);
+
+}
+
+.comment__data {
+	display: flex;
+	/* justify-content: start; */
+/* align-items: center;
+background-color: rgb(54, 43, 209);
+padding: 10px;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+}
+
+.author-img {
+	width: 60px;
+	height: 60px;
+}
+
+.author-img img {
+	width: 100%;
+	height: 100%;
+}
+
+.author {
+	margin-left: 10px;
+}
+
+.autor__name {}
+
+.autor__date {}
+
+.comment__text {
+	padding: 10px;
+	margin-top: 15px;
+}
+
+*/
