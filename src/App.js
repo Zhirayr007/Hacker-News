@@ -6,6 +6,9 @@ import { getStories } from "./API/NewsService"
 import './App.css';
 
 
+
+
+
 function App() {
 	const [storyIds, setStoryIds] = useState([]); //Для сохранения массива id новостей
 	const [count, setCount] = useState(-1000); //Для  автоматического обновления новостей 
